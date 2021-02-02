@@ -1,3 +1,47 @@
 <html>
-here is where our dom-play assigment will go
-<html>
+    <title>DOM Play</title>
+    <style>
+        #clickSpans span {
+            background-color: aqua;
+        }
+    </style>
+    <head>
+        <body>
+            <h1>DOM Play </h1>
+        <div id="clickSpans">
+            <p><span> Text goes here </span></p>
+            <p><span> Text goes here </span></p>
+            <p><span> Text goes here </span></p>
+            <p><span> Text goes here </span></p>
+            <p><span> Text goes here </span></p>
+        </div>
+            
+        <script>
+            const spans = document.querySelectorAll("#clickSpans span");
+
+            //consale.log(spans);
+
+            for(const mySpna of spans)(
+                    mySpan.addEventListener("click",function(event){
+
+                         function hightlight(mySpan,myColor){
+                    if(mySpan.style.backgroundColor == 'yellow'){//yellow background, turn to white
+                         myspan.style.backgroundColor = 'white';
+                        } else {//not yellow, so turn to yellow
+                        mySpan.style.backgroundColor = 'yellow';
+                        }
+                    });
+
+
+
+            )
+
+   
+        }
+            //alert("hello");
+            //
+            document.getElementById("target").style.backgroundColor = "yellow";*/
+        </script>
+        </body>
+    </head>
+</html>
