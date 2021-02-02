@@ -9,38 +9,43 @@
         <body>
             <h1>DOM Play </h1>
         <div id="clickSpans">
-            <p><span> Text goes here </span></p>
-            <p><span> Text goes here </span></p>
-            <p><span> Text goes here </span></p>
-            <p><span> Text goes here </span></p>
-            <p><span> Text goes here </span></p>
+            <p><span data-actor="Hamlet"> Hamlet : To be or not to be, thats the question  </span></p>
+            <p><span data-actor="skull"> skull: dont ask me im only a skull ! </span></p>
+            <p><span data-actor="Hamlet"> Hamlet:  </span></p>
+            <p><span data-actor="skull"> skull </span></p>
+            <p><span data-actor="Hamlet"> Text goes here </span></p>
         </div>
-            
         <script>
-            const spans = document.querySelectorAll("#clickSpans span");
+                //spans is var so data is gobal
+            var spans = document.querySelectorAll("#clickSpans span");
 
             //consale.log(spans);
 
-            for(const mySpna of spans)(
-                    mySpan.addEventListener("click",function(event){
+            for(const mySpna of spans){
+                mySpan.addEventListener("click",function(event){
+                    highlightActor(mySpna.dataset.actor);
 
-                         function hightlight(mySpan,myColor){
-                    if(mySpan.style.backgroundColor == 'yellow'){//yellow background, turn to white
-                         myspan.style.backgroundColor = 'white';
-                        } else {//not yellow, so turn to yellow
-                        mySpan.style.backgroundColor = 'yellow';
-                        }
+                     alert(mySpna.dataset.actor);
+
+
+                  
                     });
 
+                }
 
+                function highlightActor(myactor){
 
-            )
-
+                    for(const mySpan of spans){
+                        if (mySpan.dataset.actor == myActor){//current actor, hightlight
+                    mySpan.style.backgroundColor = 'yellow';
+                    mySpan.style.fontWeight='bold';
+                        } else {//not current actor? change to white
+                    mySpan.style.backgroundColor = 'white';
+                    mySpan.style.fontWeight='normal';
    
         }
-            //alert("hello");
-            //
-            document.getElementById("target").style.backgroundColor = "yellow";*/
+    
+    
         </script>
         </body>
     </head>
