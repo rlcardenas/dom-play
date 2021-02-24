@@ -1,52 +1,134 @@
-<html>
-    <title>DOM Play</title>
-    <style>
-        #clickSpans span {
-            background-color: aqua;
-        }
-    </style>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+        <link rel="stylesheet" href="style.css">
+        <head>
+        <title>DOM Play</title>
+
         <body>
-            <h1>DOM Play </h1>
-        <div id="clickSpans">
-            <p><span data-actor="Hamlet"> Hamlet : To be or not to be, thats the question  </span></p>
-            <p><span data-actor="skull"> skull: dont ask me im only a skull ! </span></p>
-            <p><span data-actor="Hamlet"> Hamlet:  </span></p>
-            <p><span data-actor="skull"> skull </span></p>
-            <p><span data-actor="Hamlet"> Text goes here </span></p>
-        </div>
+            <div id="clickSpans" class="main">
+            <h1>Romeo and Juliet Original Play</h1>
+            <h4><strong>Enter Nurse</strong></h4>
+            <p><span data-actor="nurse">Nurse: Mistress! what, mistress! Juliet! fast, I warrant her, she:
+                Why, lamb! why, lady! fie, you slug-a-bed!
+                Why, love, I say! madam! sweet-heart! why, bride!
+                What, not a word? you take your pennyworths now;
+                Sleep for a week; for the next night, I warrant,
+                The County Paris hath set up his rest,
+                That you shall rest but little. God forgive me,
+                Marry, and amen, how sound is she asleep!
+                I must needs wake her. Madam, madam, madam!
+                Ay, let the county take you in your bed;
+                He’ll fright you up, i’ faith. Will it not be?</span></p>
+            <h4><strong>Undraws Curtain</strong></h4>
+            <p><span data-actor="nurse">Nurse: What, dress’d! and in your clothes! and down again!
+                I must needs wake you; Lady! lady! lady!
+                Alas, alas! Help, help! my lady’s dead!
+                O, well-a-day, that ever I was born!
+                Some aqua vitae, ho! My lord! my lady!</span></p>
+            <h4><strong>Enter Lady Capulet</strong></h4>
+            <p><span data-actor="ladyCapulet">Lady Capulet: What noise is here?</span></p>
+            <p><span data-actor="nurse">Nurse: O lamentable day!</span></p>
+            <p><span data-actor="ladyCapulet">Lady Capulet: What is the matter?</span></p>
+            <p><span data-actor="nurse">Nurse: Look, look! O heavy day!</span></p>
+            <p><span data-actor="ladyCapulet">Lady Capulet: O me, O me! My child, my only life,
+                Revive, look up, or I will die with thee!
+                Help, help! Call help.</span></p>
+            <h4><strong>Enter Capulet</strong></h4>
+            <p><span data-actor="capulet">Capulet: For shame, bring Juliet forth; her lord is come.</span></p>
+            <p><span data-actor="nurse">Nurse: She’s dead, deceased, she’s dead; alack the day!</span></p>
+            <p><span data-actor="ladyCapulet">Lady Capulet: Alack the day, she’s dead, she’s dead, she’s dead!</span></p>
+            <p><span data-actor="capulet">Capulet: Ha! let me see her: out, alas! she’s cold:
+                Her blood is settled, and her joints are stiff;
+                Life and these lips have long been separated:
+                Death lies on her like an untimely frost
+                Upon the sweetest flower of all the field.</span></p>
+            <p><span data-actor="nurse">Nurse: O lamentable day!</span></p>
+            <p><span data-actor="ladyCapulet">Lady Capulet: O woful time!</span></p>
+            <p><span data-actor="capulet">Capulet: Death, that hath ta’en her hence to make me wail,
+                Ties up my tongue, and will not let me speak.</span></p>
+            <h4><strong>Enter Friar Laurence and Paris, with Musicians</strong></h4>
+            <p><span data-actor="friarLaurence">Friar Laurence: Come, is the bride ready to go to church?</span></p>
+            <p><span data-actor="capulet">Capulet: Ready to go, but never to return.
+                O son! the night before thy wedding-day
+                Hath Death lain with thy wife. There she lies,
+                Flower as she was, deflowered by him.
+                Death is my son-in-law, Death is my heir;
+                My daughter he hath wedded: I will die,
+                And leave him all; life, living, all is Death’s.</span></p>
+            <p><span data-actor="paris">Paris: Have I thought long to see this morning’s face,
+                And doth it give me such a sight as this?</span></p>
+            <p><span data-actor="ladyCapulet">Lady Capulet: Accursed, unhappy, wretched, hateful day!
+                Most miserable hour that e’er time saw
+                In lasting labour of his pilgrimage!
+                But one, poor one, one poor and loving child,
+                But one thing to rejoice and solace in,
+                And cruel death hath catch’d it from my sight!</span></p>
+            <p><span data-actor="nurse">Nurse: O woe! O woful, woful, woful day!
+                Most lamentable day, most woful day,
+                That ever, ever, I did yet behold!
+                O day! O day! O day! O hateful day!
+                Never was seen so black a day as this:
+                O woful day, O woful day!</span></p>
+            <p><span data-actor="paris">Paris: Beguiled, divorced, wronged, spited, slain!
+                Most detestable death, by thee beguil’d,
+                By cruel cruel thee quite overthrown!
+                O love! O life! not life, but love in death!</span></p>
+            <p><span data-actor="capulet">Capulet: Despised, distressed, hated, martyr’d, kill’d!
+                Uncomfortable time, why camest thou now
+                To murder, murder our solemnity?
+                O child! O child! my soul, and not my child!
+                Dead art thou! Alack! my child is dead;
+                And with my child my joys are buried.</span></p>
+            <p><span data-actor="friarLaurence">Friar Laurence: Peace, ho, for shame! confusion’s cure lives not
+                In these confusions. Heaven and yourself
+                Had part in this fair maid; now heaven hath all,
+                And all the better is it for the maid:
+                Your part in her you could not keep from death,
+                But heaven keeps his part in eternal life.
+                The most you sought was her promotion;
+                For ’twas your heaven she should be advanced:
+                And weep ye now, seeing she is advanced
+                Above the clouds, as high as heaven itself?
+                O, in this love, you love your child so ill,
+                That you run mad, seeing that she is well:
+                She’s not well married that lives married long;
+                But she’s best married that dies married young.
+                Dry up your tears, and stick your rosemary
+                On this fair corse; and, as the custom is,
+                In all her best array bear her to church:
+                For though fond nature bids us an lament,
+                Yet nature’s tears are reason’s merriment.</span></p>
+
+
+            </div>
         <script>
-                //spans is var so data is gobal
+            //spans is var so data is global
             var spans = document.querySelectorAll("#clickSpans span");
+            for(const mySpan of spans){
 
-            //consale.log(spans);
-
-            for(const mySpna of spans){
                 mySpan.addEventListener("click",function(event){
-                    highlightActor(mySpna.dataset.actor);
+                    hightlightActor(mySpan.dataset.actor);
+                });
+            }
 
-                     alert(mySpna.dataset.actor);
-
-
-                  
-                    });
-
-                }
-
-                function highlightActor(myactor){
-
-                    for(const mySpan of spans){
-                        if (mySpan.dataset.actor == myActor){//current actor, hightlight
-                    mySpan.style.backgroundColor = 'yellow';
+           function hightlightActor(myActor){
+                for(const mySpan of spans){
+                    if (mySpan.dataset.actor == myActor){//current actor, hightlight
+                    mySpan.style.backgroundColor = 'blue';
                     mySpan.style.fontWeight='bold';
-                        } else {//not current actor? change to white
-                    mySpan.style.backgroundColor = 'white';
+                    } else {//not current actor? change to white
+                    mySpan.style.backgroundColor = '';
                     mySpan.style.fontWeight='normal';
-   
-        }
-    
-    
+                    }
+                }
+            }
+
         </script>
         </body>
+        <footer>
+            <p><small>&copy; 2021 <a href="mailto:amidrammeh1@gmail.com" target="_blank" rel="noopener noreferrer">Contact Ami Drammeh </a>, All Rights Reserved ~ <a href="http://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~ <a href="http://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+              Copyright [2014-2021]. Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License, Version 2.0</a>
+              </small></p>
+          </footer>
     </head>
 </html>
