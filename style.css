@@ -1,14 +1,14 @@
 html {
-    background-color: #09d9f5 ;
-    font-family: 'Amatic SC'; cursive;;
+    background-color: #ffe5d9;
+    font-family: 'Amatic SC', cursive;;
     font-size: large;
-    color: black;
+    color: #495057;
 
 }
 
 ::selection {
     color: #000; 
-    background: #a6e6ee ;
+    background: #fff2a8;
 }
 
 header {
@@ -22,7 +22,7 @@ header {
 h1 {
     font-weight: normal;
     margin: auto;
-    background: #b2ace9;
+    background: #9d8189;
     line-height: 2.5em;
     font-size: 45px;
     text-align: center;
