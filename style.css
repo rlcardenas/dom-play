@@ -1,6 +1,6 @@
 html {
-    background-color: #ADF4FE ;
-    font-family: 'Amatic SC';
+    background-color: #09d9f5 ;
+    font-family: 'Amatic SC'; cursive;;
     font-size: large;
     color: black;
 
@@ -8,7 +8,7 @@ html {
 
 ::selection {
     color: #000; 
-    background: #ADF4FE ;
+    background: #a6e6ee ;
 }
 
 header {
@@ -22,7 +22,7 @@ header {
 h1 {
     font-weight: normal;
     margin: auto;
-    background: #9d8189;
+    background: #b2ace9;
     line-height: 2.5em;
     font-size: 45px;
     text-align: center;
